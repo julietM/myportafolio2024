@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: orange;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: darkmagenta;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 50px;
+   
+}
+nav a{
+    color: white;
+    text-decoration: none; 
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;   
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+li:hover a{
+    color: orange;
+}
+#click{
+    display: none;
+}
+
+main .cuadro{
+    width: 50%;
+    height: 20px;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: darkmagenta;
+    flex: 0 0 auto;
+}
+
+.cuadro{
+    height: 100vh;
+}
+.click{
+    text-align: center;
+    line-height: 78px;
+}
+.click a{
+ font-size: 25px;
+ color: white;
+ padding: 30px;
+ 
+ 
+}
+.click a:hover{
+    color: orangered;
+    
+}
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .galeria img{
+    max-width: 400px;
+    padding: 1rem;
+  }
+  .texto{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  }
+  p{
+    width: 1020px;
+    padding-left: 78px;
+    color: white;
+    text-align: left;
+  }
+  .cuadro{
+    height: 24cm;
+  }
+@media(max-width:600px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: darkorchid;
+        top:60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 70px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+     nav li  a:hover{
+       color: orange;
+
+    }
+    }
+    #click:checked~ul{
+        left: 0;
+    }
+  
+    @media(max-width:600px){
+     main{
+        width: 350px;
+     }
+     .box{
+        width: 350px;
+        height: 330px;
+     }
+     .text2{
+        width: 330px;
+        padding-left: 26px;
+     
+    }
+    
+    }
+    @media(max-width:600px){
+        body{
+            background-color: orange;
+        }
+        footer{
+            width: 100%;
+        }
+        .cuadro{
+            height: 57cm;
+        }
+        .texto{
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+        }
+        p{
+            padding-left: 46px;
+            color: white;
+            width: 95%;
+        }
+        .galeria{
+            margin-left: 27px;
+        }
+    }
+    
+
+  
+    
+
+    
